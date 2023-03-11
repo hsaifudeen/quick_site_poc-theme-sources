@@ -26,7 +26,7 @@ jobs:
           fi
       - name: NPM audit
         run: |
-           npm -progress false audit
+           npm -progress true audit
       - name: NPM install
         run: |
            npm -progress false install
