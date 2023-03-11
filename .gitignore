@@ -10,3 +10,5 @@ dist/
 
 # make sure no .env file is present in the theme.zip file - AEM adds this file when downloading the theme
 .env
+
+.idea
