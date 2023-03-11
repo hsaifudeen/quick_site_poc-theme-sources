@@ -16,9 +16,12 @@ jobs:
               
       - name: Checking Node version
         run: node -v
+          npm install -g n   
+          n 16.17.1
+          node -v
 
       - name: Install NPM dependencies
-        run: npm install npm@7.10.0
+        run: npm install
 
       - name: Build artifacts for production
         run: npm run build
