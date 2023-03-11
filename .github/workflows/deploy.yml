@@ -15,7 +15,8 @@ jobs:
       
               
       - name: Checking Node version
-        run: node -v
+        run: |
+          node -v
           npm install -g n   
           n 16.17.1
           node -v
