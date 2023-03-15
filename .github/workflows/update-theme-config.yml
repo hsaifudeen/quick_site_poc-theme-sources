@@ -36,6 +36,6 @@ jobs:
           GIT_HASH: ${{ steps.hash_var.outputs.GIT_HASH }}
           AEM_URL: ${{ secrets.AEM_URL }}
         run: |
-          echo env.AEM_SITE
-          echo env.AEM_URL
+          echo "env AEM_SITE is ${{env.AEM_SITE}} and AEM_SITE is ${{AEM_SITE}}"
+          echo "env AEM_URL is ${{env.AEM_URL}} and AEM_URL is ${{AEM_URL}}"
           npx aem-site-theme-builder deploy
